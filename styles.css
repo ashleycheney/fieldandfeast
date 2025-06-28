@@ -1,3 +1,11 @@
+/* CSS BY ASHLEY CHENEY */
+
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,8 +55,7 @@ table {
 	border-spacing: 0;
 }
 
-/* CSS RESET ^^ */
-/* Code by Ashley Cheney */
+/* ROOT VARIABLES */
 
 :root {
   --font-serif: 'Playfair Display', serif;
@@ -59,6 +66,8 @@ table {
   --dark-charcoal: #2B2B2B;
   --soft-white: #FAF9F6;
 }
+
+/* GLOBAL STYLES (mobile first/small) */
 
 body {
   font-family: var(--font-serif);
@@ -258,6 +267,8 @@ footer a:focus {
   outline: none;
 }
 
+/* MEDIA QUERY (medium) */
+
 @media (min-width: 768px) {
   .titles {
     padding: 3rem 1rem;
@@ -298,6 +309,8 @@ footer a:focus {
     max-width: 250px;
   }
 }
+
+/* MEDIA QUERY (large) */
 
 @media (min-width: 1200px) {
   #gallery {
