@@ -48,7 +48,6 @@ table {
 }
 
 /* CSS RESET ^^ */
-* Code by Ashley Cheney */
 
 :root {
   --font-serif: 'Playfair Display', serif;
@@ -144,6 +143,101 @@ p {
   color: var(--dark-charcoal);
 }
 
+
+.section-divider {
+  height: 3px;
+  background-color: var(--champagne-gold);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+
+#offerings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+.offeringbox {
+  background-color: var(--olive-green);
+  color: var(--soft-white);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.offeringbox p, .offeringbox ul {
+  margin: 0.75rem 0 1rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.offeringbox ul {
+  padding-left: 1.5rem;
+}
+
+.offeringbox ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+figure {
+  background-color: var(--linen);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--dark-charcoal);
+  margin: 0;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.5rem 1rem 1rem;
+  color: var(--dark-charcoal);
+}
+
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem auto 4rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--olive-green);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #5c6b45;
+  outline: none;
+}
+
 footer {
   background-color: var(--midnight-blue);
   color: var(--soft-white);
@@ -161,4 +255,51 @@ footer a:hover,
 footer a:focus {
   text-decoration: underline;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .titles {
+    padding: 3rem 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  #offerings {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .offeringbox {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .offeringbox:last-child {
+    flex-basis: 100%;
+  }
+
+  #gallery {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem 3rem;
+  }
+
+  .button {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
