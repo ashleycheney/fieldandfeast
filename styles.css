@@ -48,3 +48,48 @@ table {
 }
 
 /* CSS RESET ^^ */
+* Code by Ashley Cheney */
+
+:root {
+  --font-serif: 'Playfair Display', serif;
+  --midnight-blue: #1F2A44;
+  --olive-green: #76885B;
+  --champagne-gold: #E5C185;
+  --linen: #F8F4EC;
+  --dark-charcoal: #2B2B2B;
+  --soft-white: #FAF9F6;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--soft-white);
+  color: var(--dark-charcoal);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.8rem; 
+  color: var(--midnight-blue);
+  font-weight: normal;
+  margin: 3rem 1rem 1rem;
+}
+
+h3 {
+  font-size: 1.5rem; 
+  margin: 1rem 1rem 0.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; 
+  margin: 1rem;
+  line-height: 1.6;
+  color: var(--dark-charcoal);
+}
